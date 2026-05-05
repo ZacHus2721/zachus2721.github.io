@@ -1,5 +1,6 @@
 /* Background and Font */
 body {
+    background: red !important;
     background: linear-gradient(to right, #e0eafc, #cfdef3);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
