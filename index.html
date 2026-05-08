@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Required Meta Tags -->
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio webpage with About, Projects, and Contact sections">
     <meta name="keywords" content="HTML, GitHub Pages, portfolio, projects">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Zack Huster">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My GitHub Page</title>
-    
-        
-<link rel="stylesheet" href="styles.css"> 
-        
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -24,10 +22,13 @@
 <nav>
     <ul>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
+
+<!-- Main Content Flexbox -->
+<main>
 
 <section>
     <h2>About</h2>
@@ -40,14 +41,12 @@
     <table>
         <caption>My Sample Projects</caption>
 
-        <!-- Column Styling -->
         <colgroup>
             <col style="background-color: #e8f0fe;">
             <col>
             <col style="background-color: #e8f0fe;">
         </colgroup>
 
-        <!-- Table Header -->
         <thead>
             <tr>
                 <th>Project Name</th>
@@ -56,22 +55,24 @@
             </tr>
         </thead>
 
-        <!-- Table Body -->
         <tbody>
             <tr>
                 <td>Portfolio Website</td>
                 <td>A personal website showcasing my skills and projects.</td>
-                <td><img src="https://via.placeholder.com/150" alt="Portfolio Project"></td>
+                <td>
+                    <img src="https://via.placeholder.com/150" alt="Portfolio Project">
+                </td>
             </tr>
 
             <tr>
                 <td>Restaurant App</td>
                 <td>A simple restaurant ordering application with menus.</td>
-                <td><img src="https://via.placeholder.com/150" alt="Restaurant App"></td>
+                <td>
+                    <img src="https://via.placeholder.com/150" alt="Restaurant App">
+                </td>
             </tr>
         </tbody>
 
-        <!-- Table Footer -->
         <tfoot>
             <tr>
                 <td colspan="3">End of Project List</td>
@@ -80,14 +81,42 @@
     </table>
 </section>
 
-
-<section>
+<!-- Contact Section -->
+<section id="contact">
     <h2>Contact</h2>
-    <p>How you can reach me.</p>
+
+    <form>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message">
+
+    </form>
 </section>
 
+</main>
+
 <footer>
-    2026 Zack Huster
+    &copy; 2026 Zack Huster
 </footer>
 
 </body>
+</html>
